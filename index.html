@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="estilo.css">
+    <title>Pães Caseiros</title>
+    
+</head>
+<body>
+           
+<nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao Pães da Cléo</h1>
+            <p>Feitos com amor e carinho</p>
+            <button>Peça agora</button>
+        </section>
+
+        <div class="formulario">
+            <h2>Pedido de Pães</h2>
+
+<form id="pedidoForm">
+    <label for="nome">Seu Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="tipo">Tipo de Pão:</label>
+    <select id="tipo" name="tipo" required>
+        <option value="francês">Pão Francês</option>
+        <option value="italiano">Pão Italiano</option>
+        <option value="sourdough">Pão Sourdough</option>
+        <option value="integral">Pão Integral</option>
+    </select>
+
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" name="quantidade" min="1" required>
+</form>
+        </div>
+
+        
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Na "Pães da Cléo", acreditamos que o pão é mais do que um alimento; é um símbolo de acolhimento, tradição e amor. <br>
+                a missão é trazer para você os melhores pães, feitos com ingredientes frescos e de qualidade, utilizando receitas que<br>
+                foram passadas de geração em geração.</p>
+            </p>
+        </section>
+
+        <section id="produtos">
+            <h2>Nossos Pães</h2>
+            <div class="galeria">
+                <div class="produto">
+                    <img src="imagem/pao.png" alt="Pão03" class="produto-img" onclick="abrirModal(this)">
+                    <div class="descricao">Pão Tradicional - R$20,00</div>
+                </div>
+                <div class="produto">
+                    <img src="imagem/baquete..jpg" alt="Baquete" class="produto-img"> 
+                    <div class="descricao">Baquete - R$12,00</div>
+                </div>
+                <div class="produto">
+                    <img src="imagem/integral.jpg" alt="Integral" class="produto-img">
+                    <div class="descricao">Pão de Queijo - R$28,00</div>
+                </div>
+
+                <div class="produto">
+                    <img src="imagem/batata.png" alt="Batata" class="produto-img">
+                    <div class="descricao">Pão de Batata - R$18,00</div>
+                </div>
+                
+                <div class="produto">
+                    <img src="imagem/rosquinhas.jpg" alt="Rosquinhas" class="produto-img">
+                    <div class="descricao">Rosquinhas - R$12,00</div>
+                </div>
+
+                <div class="produto">
+                    <img src="imagem/frances.jpg" alt="Frances" class="produto-img">
+                    <div class="descricao">Pão Francês- R$12,00</div>
+                </div>
+
+                <div class="produto">
+                    <img src="imagem/cake.jpg" alt="Cake" class="produto-img">
+                    <div class="descricao">Cakes - R$35,00</div>
+                </div>
+
+                
+                <div class="produto">
+                    <img src="imagem/batata02.jpg" alt="Batata02" class="produto-img">
+                    <div class="descricao">Pão de Batata  - R$35,00</div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal" class="modal">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <img id="imgModal" class="modal-content">
+            <div id="caption"></div>
+        </div>
+
+        <div class="imagem-treinamento">
+           <img src="imagem/treinamento.jpg" alt="Treinamento" class="treinamento-img">
+
+        </div>
+        <div class="treinamento">
+            <p>Temos treinamento também!</p>
+            <p> Se você é um padeiro apaixonado ou um empreendedor em busca de expandir seus negócios, este é o lugar certo para você.
+                <br>Nossa equipe está aqui para ajudar você.  Aprenda a destacar a qualidade e o sabor dos seus pães, criando uma conexão emocional com seus clientes.
+                <p>Junte-se a nós e descubra como fazer de cada venda uma experiência memorável! Vamos juntos levar seus pães ao próximo nível!
+
+                </p>
+            </p>
+        </div>
+
+
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco e faça sua inscrição pelo e-mail</p>
+            <p>cleoysita@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024 Pães da Cléo</p>
+       <P>Desenvolvido por Cléo Ysita</P>
+       
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
